@@ -285,9 +285,18 @@ img{ max-width:100%; display:block; }
 
 .folio-grid{ margin-top:34px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
 .folio{ background:var(--panel-dark-2); border:1px solid var(--line-dark); border-radius:var(--r); padding:22px; }
-.folio .tag{ font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); }
+.folio img{ width:100%; aspect-ratio:4/3.13; object-fit:cover; border-radius:6px; background:#fff; }
+.folio .tag{ margin-top:16px; display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); }
 .folio h4{ margin-top:12px; font-size:16.5px; font-weight:600; }
 @media (max-width:900px){ .folio-grid{ grid-template-columns:1fr; } }
+
+/* comparación literal de logotipo */
+.logo-real{ margin-top:36px; display:grid; grid-template-columns:220px 1fr; gap:20px; align-items:stretch; }
+.logo-real-card{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:24px 16px; border-radius:var(--r); background:var(--panel-dark); border:1px solid rgba(198,161,90,.4); }
+.logo-real-card img{ width:100%; max-width:150px; }
+.logo-real-lbl{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); text-align:center; }
+.logo-real .lotus-wall{ margin-top:0; }
+@media (max-width:760px){ .logo-real{ grid-template-columns:1fr; } }
 
 /* cierre */
 .check-big{ margin-top:40px; display:flex; flex-direction:column; border-top:1px solid var(--line-dark-strong); }
@@ -535,10 +544,9 @@ img{ max-width:100%; display:block; }
         <div class="price reveal" style="--d:260ms">
           <div class="tag">Opción A</div>
           <div class="amt">$3,000 <span>MXN / mes</span></div>
-          <div class="desc">Gestión + pauta incluida</div>
+          <div class="desc">Presupuesto total para Facebook e Instagram (Meta)</div>
           <ul>
-            <li>Configuración y gestión completa de la campaña</li>
-            <li>Presupuesto de pauta incluido dentro del monto mensual</li>
+            <li>Los $3,000 son el presupuesto total de pauta en Facebook e Instagram (Meta) — incluye la gestión completa de la campaña, sin costo adicional</li>
             <li>1 objetivo activo: conversaciones por WhatsApp (o el que se defina el jueves)</li>
             <li>Creativos cubiertos por el servicio de contenido mensual</li>
             <li>Reporte de resultados</li>
@@ -594,16 +602,22 @@ img{ max-width:100%; display:block; }
       <div class="eyebrow-sm reveal">Propuesta · Proyecto aparte</div>
       <h2 class="reveal" style="--d:80ms">Una oportunidad para <em>diferenciar a Denmar</em> del resto</h2>
       <p class="lede reveal" style="--d:140ms">El lotus dorado sobre tonos rosas es uno de los recursos más repetidos en toda la industria de belleza y bienestar — aparece una y otra vez, marca tras marca, spa tras spa. Eso no habla mal del logotipo actual de Denmar; habla de qué tan saturado está ese lenguaje visual en el sector. Y ahí está la oportunidad.</p>
-      <div class="lotus-wall reveal" style="--d:200ms">
-        <div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div>
-        <div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div>
+      <div class="logo-real reveal" style="--d:200ms">
+        <div class="logo-real-card">
+          <img src="assets/denmar-logo.png" alt="Logotipo actual de Denmar Spa" />
+          <span class="logo-real-lbl">Su logotipo actual</span>
+        </div>
+        <div class="lotus-wall">
+          <div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div>
+          <div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div>
+        </div>
       </div>
-      <div class="wall-cap reveal" style="--d:240ms">Este mismo concepto se repite, con pequeñas variaciones, en cientos de marcas de belleza y spa a nivel global.</div>
+      <div class="wall-cap reveal" style="--d:240ms">Este mismo concepto — loto dorado sobre rosa — se repite, con pequeñas variaciones, en cientos de marcas de belleza y spa a nivel global. Así se ve el logotipo real de Denmar dentro de ese mismo lenguaje visual.</div>
       <p class="lede reveal" style="--d:300ms;margin-top:28px"><strong style="color:var(--ink-light)">Lo que proponemos:</strong> evolucionar el logotipo de Denmar conservando la elegancia y la paleta ya construidas, pero con un signo propio — algo inconfundiblemente Denmar, no intercambiable con la marca de al lado.</p>
       <div class="folio-grid">
-        <div class="folio reveal" style="--d:360ms"><div class="tag">Branding</div><h4>Logotipo — Asesor de Moda</h4></div>
-        <div class="folio reveal" style="--d:400ms"><div class="tag">Branding</div><h4>Logotipo — Smart Storage</h4></div>
-        <div class="folio reveal" style="--d:440ms"><div class="tag">Branding</div><h4>Logotipo — Inmobiliaria</h4></div>
+        <div class="folio reveal" style="--d:360ms"><img src="assets/behance-asesor-moda.jpg" alt="Logotipo Karina Poot, Consultora de Imagen" /><div class="tag">Branding</div><h4>Logotipo — Asesor de Moda</h4></div>
+        <div class="folio reveal" style="--d:400ms"><img src="assets/behance-smart-storage.jpg" alt="Logotipo Smart Storage, renta de mini bodegas" /><div class="tag">Branding</div><h4>Logotipo — Smart Storage</h4></div>
+        <div class="folio reveal" style="--d:440ms"><img src="assets/behance-inmobiliaria.jpg" alt="Logotipo Xava Vargas y Asociados, Inmobiliaria" /><div class="tag">Branding</div><h4>Logotipo — Inmobiliaria</h4></div>
       </div>
       <a class="btn reveal" style="--d:480ms" href="https://www.behance.net/partumdesign2" target="_blank" rel="noopener">Ver portafolio completo en Behance ↗</a>
       <p class="lede reveal" style="--d:520ms;margin-top:22px">Lo proponemos como proyecto aparte, sin afectar ni retrasar el contenido de octubre.</p>
