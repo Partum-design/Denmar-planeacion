@@ -273,15 +273,9 @@ img{ max-width:100%; display:block; }
 @media (max-width:900px){ .access-grid{ grid-template-columns:1fr; } }
 
 /* logotipo */
-.lotus-wall{ margin-top:36px; display:grid; grid-template-columns:repeat(12,1fr); gap:12px; padding:24px; border-radius:var(--r); background:var(--panel-dark); border:1px solid var(--line-dark); }
-.lotus-ico{
-  width:100%; aspect-ratio:1; background-color:var(--gold); opacity:.5;
-  -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 4C29 17 21 23 8 27c11 6 19 15 24 33 5-18 13-27 24-33-13-4-21-10-24-23Z'/></svg>");
-  mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 4C29 17 21 23 8 27c11 6 19 15 24 33 5-18 13-27 24-33-13-4-21-10-24-23Z'/></svg>");
-  -webkit-mask-size:contain; mask-size:contain; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
-}
+.lotus-wall{ margin-top:36px; border-radius:var(--r); overflow:hidden; border:1px solid var(--line-dark); background:var(--panel-dark); line-height:0; }
+.lotus-wall img{ width:100%; height:auto; display:block; }
 .wall-cap{ margin-top:14px; text-align:center; font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--ink-light-faint); }
-@media (max-width:760px){ .lotus-wall{ grid-template-columns:repeat(6,1fr); } }
 
 .folio-grid{ margin-top:34px; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
 .folio{ background:var(--panel-dark-2); border:1px solid var(--line-dark); border-radius:var(--r); padding:22px; }
@@ -292,9 +286,9 @@ img{ max-width:100%; display:block; }
 
 /* comparación literal de logotipo */
 .logo-real{ margin-top:36px; display:grid; grid-template-columns:220px 1fr; gap:20px; align-items:stretch; }
-.logo-real-card{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:24px 16px; border-radius:var(--r); background:var(--panel-dark); border:1px solid rgba(198,161,90,.4); }
+.logo-real-card{ display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:24px 16px; border-radius:var(--r); background:#FFFFFF; border:1px solid rgba(198,161,90,.4); }
 .logo-real-card img{ width:100%; max-width:150px; }
-.logo-real-lbl{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); text-align:center; }
+.logo-real-lbl{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-deep); text-align:center; }
 .logo-real .lotus-wall{ margin-top:0; }
 @media (max-width:760px){ .logo-real{ grid-template-columns:1fr; } }
 
@@ -608,11 +602,10 @@ img{ max-width:100%; display:block; }
           <span class="logo-real-lbl">Su logotipo actual</span>
         </div>
         <div class="lotus-wall">
-          <div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div>
-          <div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div><div class="lotus-ico"></div>
+          <img src="assets/lotus-logos-search.png" alt="Búsqueda real de logotipos de loto dorado sobre rosa, similares al de Denmar Spa" />
         </div>
       </div>
-      <div class="wall-cap reveal" style="--d:240ms">Este mismo concepto — loto dorado sobre rosa — se repite, con pequeñas variaciones, en cientos de marcas de belleza y spa a nivel global. Así se ve el logotipo real de Denmar dentro de ese mismo lenguaje visual.</div>
+      <div class="wall-cap reveal" style="--d:240ms">Búsqueda real: decenas de spas y marcas de belleza usando el mismo loto dorado sobre rosa, con pequeñas variaciones. Así se ve el logotipo real de Denmar dentro de ese mismo lenguaje visual.</div>
       <p class="lede reveal" style="--d:300ms;margin-top:28px"><strong style="color:var(--ink-light)">Lo que proponemos:</strong> evolucionar el logotipo de Denmar conservando la elegancia y la paleta ya construidas, pero con un signo propio — algo inconfundiblemente Denmar, no intercambiable con la marca de al lado.</p>
       <div class="folio-grid">
         <div class="folio reveal" style="--d:360ms"><img src="assets/behance-asesor-moda.jpg" alt="Logotipo Karina Poot, Consultora de Imagen" /><div class="tag">Branding</div><h4>Logotipo — Asesor de Moda</h4></div>
